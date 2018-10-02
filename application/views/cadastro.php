@@ -19,9 +19,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-md-6">
 					<form id="cadastrar" method="POST" class="form-horizontal">
 						<!-- ###### DADOS DO USUÁRIO ###### -->
-						<h4>Dados Pessoais</h4>
+						
 						<!-- Nome-->
 						<div class="form-group">
+						  <h4>Dados Pessoais</h4>
 						  <label class="col-md-4 control-label" for="txtNome">Nome</label>  
 						  <div class="col-md-12">
 							<input id="txtNome" name="txtNome" type="text" placeholder="Digite seu nome" class="form-control input-md" required>
@@ -131,7 +132,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<!-- Botões -->
 					<div class="form-group float-right">
 					 	<button id="btnConfirmar" type="submit" name="btnConfirmar" class="btn btn-success" value="C">Confirmar</button>
-						<button id="btnLimpar" type="reset" class="btn btn-warning" >Limpar</button>
 						<button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Cancelar</button>
 					</div>
 					</form>

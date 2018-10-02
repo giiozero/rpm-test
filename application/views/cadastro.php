@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- Nome-->
 						<div class="form-group">
 						  <h4>Dados Pessoais</h4>
-						  <label class="col-md-4 control-label" for="txtNome">Nome</label>  
+						  <label class="col-md-4 control-label" for="txtNome">Nome <span class="text-danger">(*)</span></label>  
 						  <div class="col-md-12">
 							<input id="txtNome" name="txtNome" type="text" placeholder="Digite seu nome" class="form-control input-md" required>
 						  </div>
@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<!-- Email-->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="txtEmail">Email</label>  
+						  <label class="col-md-4 control-label" for="txtEmail">Email <span class="text-danger">(*)</span></label>  
 						  <div class="col-md-12">
 							<input id="txtEmail" name="txtEmail" type="email" placeholder="Digite seu e-mail" class="form-control input-md" required>
 						  </div>
@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						<!-- Senha -->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="txtSenha">Senha</label>
+						  <label class="col-md-4 control-label" for="txtSenha">Senha <span class="text-danger">(*)</span></label>
 						  <div class="col-md-12">
 							<input id="txtSenha" name="txtSenha" type="password" placeholder="Digite a senha" pattern=".{6,}" title="Mínimo de 6 caracteres" class="form-control input-md" required>
 						  </div>
@@ -47,14 +47,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						<!-- Confirmar Senha -->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="txtConfSenha">Confirmar Senha</label>
+						  <label class="col-md-4 control-label" for="txtConfSenha">Confirmar Senha <span class="text-danger">(*)</span></label>
 						  <div class="col-md-12">
 							<input id="txtConfSenha" name="txtConfSenha" type="password" placeholder="Confirme a senha digitada" class="form-control input-md" required>
 						  </div>
 						</div>
 						<!-- Telefone -->
 						<div class="form-group">
-						  <label class="col-md-4 control-label" for="txtTelefone">Telefone</label>
+						  <label class="col-md-4 control-label" for="txtTelefone">Telefone <span class="text-danger">(*)</span></label>
 						  <div class="col-md-6">
 							<input id="txtTelefone" name="txtTelefone" type="text" placeholder="(xx) xxxxx-xxxx" class="form-control input-md" required>
 						  </div>
@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h4>Endereço</h4>
 					<!-- CEP -->
 					<div class="form-group">
-						<label class="col-md-4 control-label" for="txtCep">CEP</label>  
+						<label class="col-md-4 control-label" for="txtCep">CEP <span class="text-danger">(*)</span></label>  
 						<div class="col-md-3">
 							<input id="txtCep" name="txtCep" type="text"  maxlength="8" required  placeholder="CEP" class="form-control input-md" >
 						</div>
@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					<!-- CEP -->
 					<div class="form-group">
-						<label class="col-md-4 control-label" for="txtCep">Logradouro</label>  
+						<label class="col-md-4 control-label" for="txtCep">Logradouro <span class="text-danger">(*)</span></label>  
 						<div class="col-md-8">
 							<input id="txtLogradouro" name="txtLogradouro" type="text"  maxlength="8" required  placeholder="Rua, avenida, etc" class="form-control input-md" >
 						</div>
@@ -90,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					<!-- Número -->
 					<div class="form-group">
-						<label class="col-md-4 control-label" for="txtCep">Número</label>  
+						<label class="col-md-4 control-label" for="txtCep">Número <span class="text-danger">(*)</span></label>  
 						<div class="col-md-2">
 							<input id="txtNumero" name="txtNumero" type="text"  placeholder="Nº" class="form-control input-md"  required>
 						</div>
@@ -106,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					<!-- Bairro -->
 					<div class="form-group">
-						<label class="col-md-4 control-label" for="txtCep">Bairro</label>  
+						<label class="col-md-4 control-label" for="txtCep">Bairro <span class="text-danger">(*)</span></label>  
 						<div class="col-md-8">
 							<input id="txtBairro" name="txtBairro" type="text"  placeholder="Vila, Vale, etc" class="form-control input-md" required>
 						</div>
@@ -114,7 +114,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					<!-- Cidade -->
 					<div class="form-group">
-						<label class="col-md-4 control-label" for="txtCep">Cidade</label>  
+						<label class="col-md-4 control-label" for="txtCep">Cidade <span class="text-danger">(*)</span></label>  
 						<div class="col-md-8">
 							<input id="txtCidade" name="txtCidade" type="text"  placeholder="São Paulo, Minas Gerais, etc" class="form-control input-md" required>
 						</div>
@@ -122,7 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					<!-- Estado -->
 					<div class="form-group">
-						<label class="col-md-4 control-label" for="txtCep">Estado</label>  
+						<label class="col-md-4 control-label" for="txtCep">Estado <span class="text-danger">(*)</span></label>  
 						<div class="col-md-8">
 							<input id="txtEstado" name="txtEstado" type="text"  placeholder="SP, MG, etc" class="form-control input-md" maxlength=2  required>
 						</div>
@@ -131,6 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-md-12">	
 					<!-- Botões -->
 					<div class="form-group col-md-12 ">
+						<div class="float-left"><span class="text-danger">(*)</span> Campos obrigatórios</div>
 					 	<button id="btnConfirmar" type="submit" name="btnConfirmar" class="btn btn-success col-md-5 col-lg-1 float-right" value="C">Confirmar</button>
 						<button id="btnCancelar" name="btnCancelar" class="btn btn-danger col-md-5 col-lg-1  float-right">Cancelar</button>
 					</div>

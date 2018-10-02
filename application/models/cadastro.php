@@ -29,8 +29,11 @@ class Cadastro extends CI_Model{
 		$this->db->set('bairro', $this->bairro);
 		$this->db->set('cidade', $this->cidade);
 		$this->db->set('estado', $this->estado);
-		
-		$this->db->insert('clientes');
+		if ($this->db->insert('clientes')) {
+			echo 'Cliente inserido com sucesso!';
+		} else {
+			echo 'Houve uma falha ao inserir o cliente';
+		}
 	}
 
 }

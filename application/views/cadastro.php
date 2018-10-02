@@ -130,9 +130,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="col-md-12">	
 					<!-- Botões -->
-					<div class="form-group col-md-12">
-					 	<button id="btnConfirmar" type="submit" name="btnConfirmar" class="btn btn-success col-md-5" value="C">Confirmar</button>
-						<button id="btnCancelar" name="btnCancelar" class="btn btn-danger col-md-5">Cancelar</button>
+					<div class="form-group col-md-12 ">
+					 	<button id="btnConfirmar" type="submit" name="btnConfirmar" class="btn btn-success col-md-5 col-lg-1 float-right" value="C">Confirmar</button>
+						<button id="btnCancelar" name="btnCancelar" class="btn btn-danger col-md-5 col-lg-1  float-right">Cancelar</button>
 					</div>
 					</form>
 				</div>
